@@ -1,0 +1,361 @@
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #111;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #E6F1FB;
+  color: #0C447C;
+  font-size: 12px;
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 8px 0 6px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.stepRow {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #888;
+}
+
+.stepActive {
+  color: #1d6fde;
+  font-weight: 500;
+}
+
+.stepDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.stepActive .stepDot {
+  background: #1d6fde;
+  border-color: #1d6fde;
+  color: white;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formGroup label {
+  font-size: 13px;
+  color: #555;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  width: 100%;
+  background: #fafafa;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #1d6fde;
+  background: #fff;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.rangeLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  background: #f9fafb;
+  color: #374151;
+  user-select: none;
+}
+
+.tag:hover {
+  background: #f3f4f6;
+}
+
+.tagSelected {
+  background: #E6F1FB;
+  border-color: #85B7EB;
+  color: #0C447C;
+}
+
+.btnPrimary {
+  width: 100%;
+  padding: 12px;
+  background: #1d6fde;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btnPrimary:hover {
+  background: #1558b8;
+}
+
+.resetBtn {
+  background: none;
+  border: none;
+  color: #1d6fde;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  display: block;
+  margin: 0.75rem auto 0;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 0.5rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #1d6fde;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.sub {
+  color: #888;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.summaryBar {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 13px;
+  color: #444;
+}
+
+.listingCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+}
+
+.listingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.listingName {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.listingAddress {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.listingPrice {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d6fde;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.pill {
+  background: #f3f4f6;
+  color: #555;
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+
+.pillBlue {
+  background: #E6F1FB;
+  color: #0C447C;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.splitRow {
+  display: flex;
+  gap: 8px;
+}
+
+.splitBox {
+  flex: 1;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.splitVal {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.splitLabel {
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.actionStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.actionStep:last-child {
+  border-bottom: none;
+}
+
+.actionNum {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #E6F1FB;
+  color: #0C447C;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 560px) {
+  .formGrid { grid-template-columns: 1fr; }
+  .splitRow { flex-direction: column; }
+  .stepRow { gap: 1rem; }
+}
