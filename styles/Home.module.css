@@ -113,7 +113,8 @@
   border: 1px solid #d1d5db;
   font-size: 14px;
   width: 100%;
-  background: #fafafa;
+  background: #ffffff;
+  color: #111111;
 }
 
 .formGroup input:focus,
